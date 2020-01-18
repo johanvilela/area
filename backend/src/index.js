@@ -11,10 +11,10 @@ const app = express();
 // MogoDB Atlas
 let mongoDB = 'mongodb+srv://johanvilela:1594815926@cluster0-wmkd0.mongodb.net/week10?retryWrites=true&w=majority';
 
-mongoose.set('useCreateIndex', true);
 mongoose.connect(mongoDB, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useCreateIndex: true
 });
 
 app.use(cors());
