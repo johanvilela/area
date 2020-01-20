@@ -9,7 +9,7 @@ const app = express();
 // let mongoDB = 'mongodb://127.0.0.1/my_database';
 
 // MogoDB Atlas
-let mongoDB = 'mongodb+srv://johanvilela:1594815926@cluster0-wmkd0.mongodb.net/week10?retryWrites=true&w=majority';
+let mongoDB = 'mongodb+srv://omnistack:omnistack@cluster0-wmkd0.mongodb.net/week10?retryWrites=true&w=majority';
 
 mongoose.connect(mongoDB, {
     useNewUrlParser: true,
