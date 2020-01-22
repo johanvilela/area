@@ -16,18 +16,16 @@ function App() {
     async function loadDevs() {
       const response = await api.get('/devs');
       
-      console.log(response.data);
       setDevs(response.data);
-      console.log(response.data);
     }
 
     loadDevs();
   }, []);
 
   async function handleAddDev(data) {
-     const response = await api.post('/devs', data)
+    const response = await api.post('/devs', data); 
 
-     setDevs([...devs, response.data]);
+    setDevs([...devs, response.data]);
   }
 
   return (
