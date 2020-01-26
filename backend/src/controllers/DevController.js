@@ -27,7 +27,7 @@ module.exports = {
                 type: 'Point',
                 coordinates: [longitude, latitude],
             }
-        
+                                    
             dev = await Dev.create({
                 github_username,
                 name,
