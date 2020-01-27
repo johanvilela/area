@@ -109,7 +109,7 @@ function Main({ navigation }) {
       <View style={styles.searchFrom}>
         <TextInput
           style={styles.searchInput}
-          placeholder="Buscar devs por techs..."
+          placeholder="Search developers by technologies…"
           placeholderTextColor="#999"
           autoCapitalize="words"
           autoCorrect={false}
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
   loadButton: {
     width: 50,
     height: 50,
-    backgroundColor: '#8E4DFF',
+    backgroundColor: '#00C6FB',
     borderRadius: 25,
     justifyContent: 'center',
     alignItems: 'center',
