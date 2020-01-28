@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -12,10 +14,13 @@ const server = http.Server(app);
 setupWebsocket(server);
 
 // MogoDB Local
-let mongoDB = 'mongodb://127.0.0.1/my_database';
+// const mongoDB = 'mongodb://127.0.0.1/my_database';
 
 // MogoDB Atlas
-// let mongoDB = 'mongodb+srv://omnistack:omnistack@cluster0-wmkd0.mongodb.net/week10?retryWrites=true&w=majority';
+// const mongoDB = 'mongodb+srv://omnistack:omnistack@cluster0-wmkd0.mongodb.net/week10?retryWrites=true&w=majority';
+
+const mongoDB = process.env.MONGO_URL;
+
 
 mongoose.connect(mongoDB, {
   useNewUrlParser: true,
